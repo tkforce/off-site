@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0 auto;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+}
+
+header {
+  background-color: steelblue;
+  font-weight: bold;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+}
+
+.header-icon-question {
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  opacity: 0.4;
+  transition: 0.2s;
+}
+
+.header-icon-question:hover {
+  opacity: 1;
+}
+
+.second-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar {
+  list-style: none;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  margin-left: 100px;
+}
+
+.nav-item {
+  width: auto;
+  padding: 0 8px;
+  height: 100%;
+  float: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-item svg {
+  transform: translateY(2.5px);
+}
+
+.nav-btn-hide {
+  font-size: 18px;
+  padding: 0 8px;
+  border-left: 1px solid #999;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-item:hover,
+.nav-item.active,
+.nav-btn-hide:hover {
+  background-color: #fff;
+  color: #444;
+}
+
+.content-wrapper {
+  height: calc(100% - 75px);
+}
+
+.content-wrapper.second-header-active {
+  height: calc(100% - 110px);
+}
+
+.content-heading {
+  padding: 7px 0 10px 7px;
+  margin: 0;
+  text-align: left;
+  text-transform: uppercase;
+  color: #999;
+  height: 25px;
+}
+
+.content-table-wrapper {
+  height: calc(100% - 25px);
+  padding: 7px;
+  overflow-y: auto;
+}
+
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.content-table thead th {
+  padding: 0 8px;
+}
+
+.content-table td {
+  padding: 10px 8px;
+}
+
+.content-table thead {
+  border-bottom: 2px solid #888;
+}
+
+.content-table th:first-child,
+.content-table td:first-child {
+  font-weight: bold;
+  text-align: left;
+}
+
+.content-table th:last-child,
+.content-table td:last-child {
+  text-align: right;
+}
+
+.bar-wrapper {
+  background-color: #ccc;
+  padding: 3px 0;
+  position: relative;
+  text-align: right;
+  z-index: 1;
+}
+
+.percentage-bar {
+  position: absolute;
+  top: 0;
+  background-color: yellow;
+  height: 100%;
+  z-index: -1;
+}
+
+.percentage-txt {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.second-header,
+footer {
+  background-color: #444;
+  font-weight: bold;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  height: 35px;
+  line-height: 35px;
+}
